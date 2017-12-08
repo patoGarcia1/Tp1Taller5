@@ -22,7 +22,7 @@
 
     <EditText
         android:id="@+id/usuario"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Usuario"
         android:inputType="text"
@@ -39,7 +39,7 @@
 
     <EditText
         android:id="@+id/contraseña"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:inputType="textPassword"

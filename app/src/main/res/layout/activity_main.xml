@@ -38,6 +38,7 @@
                 android:layout_height="60dp"
                 android:layout_gravity="bottom|right"
                 android:layout_marginTop="0dp"
+                android:layout_alignRight="@id/toolbar"
                 android:backgroundTint="#8b0031"
                 android:text="Nuevo Post"
                 android:textColor="#FFFFFFFF" />
@@ -46,6 +47,7 @@
                 android:id="@+id/postLv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="68dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="16.0sp"/>
 
