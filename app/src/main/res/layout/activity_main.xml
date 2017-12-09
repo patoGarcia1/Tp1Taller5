@@ -33,7 +33,7 @@
                 android:id="@+id/toolbar" />
 
             <Button
-                android:id="@+id/nuevo_btn"
+                android:id="@+id/btnNuevo"
                 android:layout_width="100dp"
                 android:layout_height="60dp"
                 android:layout_gravity="bottom|right"

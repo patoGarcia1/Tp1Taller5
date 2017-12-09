@@ -17,25 +17,27 @@ public class Post {
     @SerializedName("id")
     private int idPost;
     private Bitmap foto;
+    private int idFoto;
     private String titulo;
     private String cuerpo;
     private String tag;
     private int puntos;
-    private double longitud;
-    private double latitud;
+  /*  private double longitud;
+    private double latitud;*/
     private ArrayList listaComentarios;
     private int contPosts=0;
     private Usuario usuarioAsignadoAlPost;
 
-    public Post(Usuario usr, Bitmap foto, String titulo, String cuerpo, double longitud, double latitud) {
+    public Post(Usuario usr, Bitmap foto, int idFoto, String titulo, String cuerpo){//, double longitud, double latitud) {
         contPosts++;
         this.idPost = Integer.valueOf(String.valueOf(usr.getIdUsuario())+String.valueOf(contPosts));
+        this.idFoto = idFoto;
         this.foto = foto;
         this.titulo = titulo;
         this.cuerpo = cuerpo;
         //this.tag = tag;
-        this.longitud = longitud;
-        this.latitud = latitud;
+       /* this.longitud = longitud;
+        this.latitud = latitud;*/
     }
 
     public void setUsuarioAsignadoAlPost(Usuario usuarioAsignadoAlPost) {
@@ -46,7 +48,7 @@ public class Post {
         return usuarioAsignadoAlPost;
     }
 
-    public void setLongitud(double longitud) {
+  /*  public void setLongitud(double longitud) {
         this.longitud = longitud;
     }
 
@@ -60,7 +62,7 @@ public class Post {
 
     public double getLatitud() {
         return latitud;
-    }
+    }*/
 
     public void setIdPost(int idPost) {
         this.idPost = idPost;
@@ -108,5 +110,13 @@ public class Post {
 
     public int getPuntos() {
         return puntos;
+    }
+
+    public int getIdFoto() {
+        return idFoto;
+    }
+
+    public void setIdFoto(int idFoto) {
+        this.idFoto = idFoto;
     }
 }
