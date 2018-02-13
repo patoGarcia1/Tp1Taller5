@@ -39,7 +39,7 @@ public class PostAPIClient {
         //Si el cliente no esta instanciado aun...
         if(client == null) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("https://my-json-server.typicode.com/patoGarcia1/Tp1/") //URL BASE de la API
+                    .baseUrl("https://my-json-server.typicode.com/patoGarcia1/Tp1Taller5/") //URL BASE de la API
                     .addConverterFactory(GsonConverterFactory.create(new Gson())) //El GsonConverter, para parsear automaticamente las respuestas que vengan en objetos del modelo
                     .build();
             client = retrofit.create(PostApi.class); //La interfaz que lista los metodos disponibles a consultar de nuestra API

@@ -25,8 +25,11 @@ public class DetailsActivity extends AppCompatActivity {
         String postSerializado = extras.getString("post");
         Post post = new Gson().fromJson(postSerializado, Post.class);
 
+               String fotoDrawable = "f"+post.getIdPost();
+        int idFoto = getResources().getIdentifier(fotoDrawable , "drawable", getPackageName());
+
         ImageView foto = (ImageView) findViewById(R.id.foto);
-        foto.setImageResource(post.getIdFoto());
+        foto.setImageResource(idFoto);
         TextView nombreTv = (TextView) findViewById(R.id.titulo);
         nombreTv.setText(post.getTitulo());
         TextView precioTv = (TextView) findViewById(R.id.cuerpo);

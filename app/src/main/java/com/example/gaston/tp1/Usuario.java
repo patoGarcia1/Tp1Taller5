@@ -6,9 +6,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by gaston on 11/11/2017.
- */
 
 public class Usuario implements Serializable{
 

@@ -8,10 +8,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-/**
- * Created by gaston on 11/11/2017.
- */
-
 public class Post {
 
     @SerializedName("id")
@@ -30,7 +26,7 @@ public class Post {
 
     public Post(Usuario usr, Bitmap foto, int idFoto, String titulo, String cuerpo){//, double longitud, double latitud) {
         contPosts++;
-        this.idPost = Integer.valueOf(String.valueOf(usr.getIdUsuario())+String.valueOf(contPosts));
+       // this.idPost = Integer.valueOf(String.valueOf(usr.getIdUsuario())+String.valueOf(contPosts));
         this.idFoto = idFoto;
         this.foto = foto;
         this.titulo = titulo;
