@@ -17,4 +17,5 @@ public interface PostApi {
         @GET("posts") //Verbo HTTP y nombre del metodo de la API
         public Call<List<Post>> getPost(); //El return type define como sera parseado automaticamente el response
 
+
 }
