@@ -21,11 +21,4 @@
       "cuerpo": "Cuerpo del post 4"
     }
   ]
- "users": [
-   {
-      "nombre": "pato",
-      "password": 123,
-      "email": "pato@pato.com"
-   }
-  ]
 }
